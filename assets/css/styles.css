@@ -104,10 +104,12 @@ p, a {
   align-content: center;
 }
 
-.nav-pages--flex {
+ul.nav-pages--flex {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
+  margin-top: 6px;
+  margin-bottom: 6px;
 }
 
 .nav-text {
@@ -197,6 +199,10 @@ hr.list-title {
   justify-content: center;
   gap: 14px;
   grid-template-columns: auto auto auto auto;
+}
+
+.grid-item {
+  width: 234px;
 }
 /* gallery */
 
