@@ -11,9 +11,9 @@
 <body>
 
   <!-- nav menu -->
-  <div class="nav">
+  <div class="nav" id="navbar">
     <div class="container nav-flex">
-      <p><a href="#home" class="nav-text"><span class="title">Stella Grant</span> Beauty</a></p>
+      <a href="#home" class="nav-text"><span class="title">Stella Grant</span> Beauty</a>
       <ul class="nav-pages--flex">
         <li><a href="#price" class="nav-text">Price List</a></li>
         <li><a href="#gallery" class="nav-text">Gallery</a></li>
@@ -43,8 +43,8 @@
 
 <!-- start: price -->
 <div class="column-8 price-list section-pad" id="price">
-  <div class="column-6">
-    <h2>Price List</h2>
+  <div class="column-5">
+    <h2 class="grey">Price List</h2>
     <div class="list-section">
       <h3>Gel Polish</h3>
       <hr class="list-title">
@@ -109,12 +109,13 @@
 </div>
 <!-- end: price -->
 
+
 <!-- start: gallery -->
 <div class="gallery section-pad" id="gallery">
   <div class="container">
     <div class="column-6">
-      <h2 class="mb-12">Gallery</h2>
-      <p class="center mb-48"><a class="link" href="https://www.instagram.com/stellagrantbeauty">@stellagrantbeauty</a></p>
+      <h2 class="mb-6">Gallery</h2>
+      <p class="fs-20 center mb-48"><a class="link" href="https://www.instagram.com/stellagrantbeauty">@stellagrantbeauty</a></p>
       <div class="grid-container">
         <img class="grid-item" src="assets/images/gallery/sgb-1.jpg" alt="">
         <img class="grid-item" src="assets/images/gallery/sgb-2.jpg" alt="">
@@ -133,28 +134,36 @@
 <!-- start: contact -->
 <div id="contact">
   <div class="contact section-pad column-8">
+    <div class="column-2">
+      <img class="fern" src="assets/images/contact--fern-1.svg" alt="">
+    </div>
     <div class="column-6">
       <h2>Contact</h2>
       <div class="center">
-        <p><b>Jennifer Wood</b></p>
-        <p>Gel polish | Gel Extensions</p>
+        <p class="fs-20 fw-400">Jennifer Wood</p>
+        <p class="fs-20 mb-48">Gel Polish | Gel Extensions</p>
       </div>
       <div class="contact-details">
-        <div class="column-2">
-          <p><a href="tel:07525444369">07525 444369</a></p>
+        <div class="column-2 tel">
+          <p class="fs-20"><a href="tel:07525444369">07525 444369</a></p>
           <hr class="contact-line">
           <p>Message</p>
         </div>
-        <div class="column-2">
-          <p><a href="https://www.instagram.com/stellagrantbeauty">@stellagrantbeauty</a></p>
+        <div class="column-2 insta">
+          <p class="fs-20"><a target="_blank" href="https://www.instagram.com/stellagrantbeauty">@stellagrantbeauty</a></p>
           <hr class="contact-line">
           <p>Instagram</p>
         </div>
       </div>
+    </div>
+    <div class="column-2">
+      <img class="fern" src="assets/images/contact--fern-2.svg" alt="">
     </div>
   </div>
 </div>
 <!-- end: contact -->
 
 </body>
+
+  <script src="assets/js/scripts.js"></script>
 </html>

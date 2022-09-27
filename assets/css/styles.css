@@ -22,24 +22,41 @@ body {
   margin-right: auto;
 }
 
+.column-5 {
+  max-width: 573px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .column-2 {
   max-width: 233px;
   margin-left: auto;
   margin-right: auto;
 }
 
+.column-1 {
+  max-width: 185px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 h2 {
   text-transform: uppercase;
-  letter-spacing: 10px;
+  letter-spacing: .5rem;;
   font-family: canada-type-gibson, sans-serif;
   font-weight: 400;
   color: #516953;
   text-align: center;
-  margin-bottom: 48px;
+  margin-bottom: 36px;
+  margin-left: 6px;
 }
 
-.mb-12 {
-  margin-bottom: 12px;
+h2.grey {
+  color: #323537;
+}
+
+.mb-6 {
+  margin-bottom: 6px;
 }
 
 .mb-48 {
@@ -69,12 +86,13 @@ p, a {
 }
 
 .section-pad {
-  padding-top: 60px;
+  padding-top: 40px;
   padding-bottom: 60px;
 }
 
 /* nav */
 .nav {
+  overflow: hidden;
   background-color: #516953;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -104,19 +122,28 @@ p, a {
 }
 
 .nav-text:hover {
-  text-decoration: underline;
+  color: #DED3A8;
   margin-top: 6px;
 }
 
 span.title {
   font-weight: 400;
 }
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+/* .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+} */
+
 /* nav */
 
 /* hero */
 .hero {
+  padding-top: 60px;
   background-color: #516953;
-  background-image: url('assets/images/hero-img.jpg');
+  background-image: url('hero-img.jpg');
   background-position: center;
   background-repeat: none;
   background-size: cover;
@@ -150,9 +177,9 @@ img.logo {
 }
 
 hr.list-title {
-  border-bottom: 1px;
-  color: #e2e4ef;
-  background-blend-mode: multiply;
+  background-color: #B1B6D2;
+  height: 1px;
+  border: none;
 }
 
 .list-section {
@@ -176,17 +203,22 @@ hr.list-title {
 /* contact */
 .contact {
   background-color: #ded3a8;
+  display: flex;
 }
 
 .center {
   text-align: center;
 }
 
+img.fern {
+  width: 90%;
+}
+
 .contact-line {
   width: 233px;
-  border-bottom: 1px;
-  color: #ded3a8;
-  background-blend-mode: multiply;
+  height: 1px;
+  background-color: #A8A04F;
+  border: none;
 }
 
 .contact-details {
@@ -194,5 +226,31 @@ hr.list-title {
   display: flex;
   margin-left: auto;
   margin-right: auto;
+}
+
+p.fs-20 {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+p.fw-400 {
+  font-weight: 400;
+}
+
+p.mb-48 {
+  margin-bottom: 48px;
+}
+
+a {
+  text-decoration: none;
+
+}
+
+a:hover {
+  color: #516953;
+}
+
+.tel {
+  margin-right: 48px;
 }
 /* contact*/
