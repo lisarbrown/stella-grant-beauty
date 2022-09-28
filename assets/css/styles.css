@@ -7,7 +7,7 @@
   width: 100%;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
   /* For tablets: */
   .col-s-1 {width: 8.33%;}
   .col-s-2 {width: 16.66%;}
@@ -23,7 +23,7 @@
   .col-s-12 {width: 100%;}
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   /* For desktop: */
   .col-1 {width: 8.33%;}
   .col-2 {width: 16.66%;}
@@ -47,9 +47,18 @@
   padding-right: 14px;
 }
 
-.col-center {
-  margin-left: auto;
-  margin-right: auto;
+@media only screen and (min-width: 768px) {
+  .col-s-center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .col-center {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .column-8 {
@@ -174,7 +183,8 @@ ul.nav-pages--flex {
 
 @media only screen and (min-width: 768px) {
   ul.nav-pages--flex {
-    padding-left: 40;
+    padding-left: 40px;
+    margin-right: 0;
   }
 }
 
@@ -291,24 +301,52 @@ hr.list-title {
 /* gallery */
 
 /* contact */
+
 .contact {
   background-color: #ded3a8;
-  display: flex;
+}
+
+@media only screen and (min-width: 768px) {
+  .contact {
+    display: flex;
+  }
 }
 
 .center {
   text-align: center;
 }
 
+.fern-col {
+  display: none;
+}
+
+@media only screen and (min-width: 992px) {
+  .fern-col {
+    display: flex;
+    align-content: center;
+  }
+}
+
 img.fern {
   width: 90%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .contact-line {
-  width: 233px;
+  width: 100%;
   height: 1px;
   background-color: #A8A04F;
   border: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .contact-line {
+    width: 200px;
+    height: 1px;
+    background-color: #A8A04F;
+    border: none;
+  }
 }
 
 .contact-details {
@@ -316,6 +354,14 @@ img.fern {
   display: flex;
   margin-left: auto;
   margin-right: auto;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+  .contact-details {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 p.fs-20 {
@@ -340,7 +386,27 @@ a:hover {
   color: #516953;
 }
 
-.tel {
-  margin-right: 48px;
+.tel, .insta {
+  padding-right: 18px;
+  padding-left: 18px;
 }
+
+@media only screen and (min-width: 768px) {
+  .tel, .insta {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.tel {
+  margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  .tel {
+    margin-right: 48px;
+    margin-bottom: 0;
+  }
+}
+
 /* contact*/
