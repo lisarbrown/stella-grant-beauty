@@ -172,31 +172,40 @@ p, a {
 
 ul.nav-pages--flex {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   list-style-type: none;
   margin-top: 6px;
   margin-bottom: 6px;
   padding-left: 0;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
   ul.nav-pages--flex {
     padding-left: 40px;
     margin-right: 0;
+    width: auto;
   }
 }
 
 .nav-text {
   color: #fff;
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 4px;
   line-height: 1.5;
   text-decoration: none;
   font-weight: 200;
-  padding-left: 12px;
+  padding-left: 6px;
   padding-right: 12px;
+}
+
+@media only screen and (min-width: 768px)  {
+  .nav-text {
+    letter-spacing: 5px;
+    padding-left: 12px;
+  }
 }
 
 .nav-text:hover {
@@ -229,9 +238,21 @@ span.title {
 
 img.logo {
   display: block;
-  width: 20%;
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  img.logo {
+    width: 25%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  img.logo {
+    width: 20%;
+  }
 }
 /* hero */
 
@@ -247,6 +268,11 @@ img.logo {
 .price-list {
   background-color: #e2e4ef;
   margin-top: -150px;
+}
+@media only screen and (min-width: 992px) {
+  .price-flex {
+    display: flex;
+  }
 }
 
 .list {
@@ -323,7 +349,6 @@ hr.list-title {
 @media only screen and (min-width: 992px) {
   .fern-col {
     display: flex;
-    align-content: center;
   }
 }
 
@@ -331,6 +356,16 @@ img.fern {
   width: 90%;
   margin-right: auto;
   margin-left: auto;
+}
+
+img.fern-top {
+  position: relative;
+  top: -290px
+}
+
+img.fern-bottom {
+  position: relative;
+  bottom: -290px
 }
 
 .contact-line {
