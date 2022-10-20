@@ -370,6 +370,7 @@ hr.list-title {
 
 .fern-col {
   display: none;
+  position: relative;
 }
 
 @media only screen and (min-width: 992px) {
@@ -385,13 +386,13 @@ img.fern {
 }
 
 img.fern-top {
-  position: relative;
-  top: -290px
+  position: absolute;
+  top: 10px
 }
 
 img.fern-bottom {
-  position: relative;
-  bottom: -290px
+  position: absolute;
+  bottom: 110px
 }
 
 .contact-line {
